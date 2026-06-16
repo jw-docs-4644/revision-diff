@@ -9,9 +9,10 @@
     <header>
       <h1>Revision Diff</h1>
       <p class="tagline">
-        See exactly what changed between a draft and a revision. Your files
-        never leave your computer — everything runs in your browser, with no
-        AI and no upload.
+        See exactly what changed between a draft and a revision. Drop in two
+        documents, or two Canvas "Download All Submissions" ZIPs to compare a
+        whole class at once. Your files never leave your computer — everything
+        runs in your browser, with no AI and no upload.
       </p>
     </header>
 
@@ -23,9 +24,9 @@
             <input
               type="file"
               id="draft-input"
-              accept=".docx,.pdf,.txt,.md"
+              accept=".docx,.pdf,.txt,.md,.zip"
             />
-            <span>Choose or drop the draft</span>
+            <span>Choose or drop a document or a submissions ZIP</span>
           </label>
           <p class="filename" id="draft-name"></p>
         </div>
@@ -36,16 +37,17 @@
             <input
               type="file"
               id="revision-input"
-              accept=".docx,.pdf,.txt,.md"
+              accept=".docx,.pdf,.txt,.md,.zip"
             />
-            <span>Choose or drop the revision</span>
+            <span>Choose or drop a document or a submissions ZIP</span>
           </label>
           <p class="filename" id="revision-name"></p>
         </div>
       </section>
 
-      <div class="stats" id="stats" hidden></div>
       <div class="error" id="error" hidden></div>
+      <div id="roster-area"></div>
+      <div class="stats" id="stats" hidden></div>
       <section class="output" id="output"></section>
     </main>
 

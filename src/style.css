@@ -93,6 +93,95 @@ main {
   border-radius: 6px;
 }
 
+.summary {
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background: #eef4fb;
+  border: 1px solid #cfe0f3;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.missing {
+  padding: 4px 16px 12px;
+  margin-bottom: 16px;
+  background: #fff8e6;
+  border: 1px solid #f0dca0;
+  border-radius: 6px;
+}
+
+.missing h3 {
+  margin: 12px 0 4px;
+}
+
+.roster-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.roster-list li {
+  margin: 0 0 4px;
+}
+
+button.student {
+  font: inherit;
+  cursor: pointer;
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: #1a1a1a;
+}
+
+button.student:hover {
+  background: #f0f0f0;
+}
+
+button.student.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.uid {
+  color: #888;
+  font-size: 0.85em;
+}
+
+.multi {
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 0.75rem;
+  background: #fff3cd;
+  border: 1px solid #f0dca0;
+  border-radius: 10px;
+}
+
+.diff-head {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.diff-head h2 {
+  margin: 0 0 4px;
+}
+
+.diff-head p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.alt {
+  color: #a06800 !important;
+}
+
+.inline-error {
+  color: var(--del-color);
+}
+
 .output p {
   margin: 0 0 0.75em;
 }

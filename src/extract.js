@@ -1,40 +1,39 @@
-// Pull plain text out of an uploaded file, entirely in the browser.
+// Pull plain text out of a document, entirely in the browser.
 // Replaces the Python tool's pandoc subprocess + Canvas downloads.
+// Works from either a File (single-file mode) or an ArrayBuffer (ZIP mode).
 
 import mammoth from 'mammoth/mammoth.browser';
 
-export async function extractText(file) {
-  const name = (file.name || '').toLowerCase();
+export async function extractTextFromFile(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  return extractText(arrayBuffer, file.name);
+}
 
-  if (name.endsWith('.docx')) {
-    const arrayBuffer = await file.arrayBuffer();
+export async function extractText(arrayBuffer, name) {
+  const n = (name || '').toLowerCase();
+
+  if (n.endsWith('.docx')) {
     const result = await mammoth.extractRawText({ arrayBuffer });
     return result.value;
   }
 
-  if (name.endsWith('.pdf')) {
-    return extractPdf(file);
+  if (n.endsWith('.pdf')) {
+    return extractPdf(arrayBuffer);
   }
 
-  if (name.endsWith('.txt') || name.endsWith('.md')) {
-    return file.text();
-  }
-
-  // Best-effort: treat anything else as plain text.
-  return file.text();
+  // .txt, .md, or anything else: treat as plain text.
+  return new TextDecoder().decode(arrayBuffer);
 }
 
 // PDF text extraction via pdf.js. Dynamically imported so the worker setup
 // and the (large) library stay out of the initial bundle.
-async function extractPdf(file) {
+async function extractPdf(arrayBuffer) {
   const pdfjs = await import('pdfjs-dist');
   const workerUrl = (await import('pdfjs-dist/build/pdf.worker.min.mjs?url'))
     .default;
   pdfjs.GlobalWorkerOptions.workerSrc = workerUrl;
 
-  const arrayBuffer = await file.arrayBuffer();
   const doc = await pdfjs.getDocument({ data: arrayBuffer }).promise;
-
   const pages = [];
   for (let i = 1; i <= doc.numPages; i += 1) {
     const page = await doc.getPage(i);
