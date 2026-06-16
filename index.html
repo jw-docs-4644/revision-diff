@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision Diff — compare a draft and a revision</title>
+  </head>
+  <body>
+    <header>
+      <h1>Revision Diff</h1>
+      <p class="tagline">
+        See exactly what changed between a draft and a revision. Your files
+        never leave your computer — everything runs in your browser, with no
+        AI and no upload.
+      </p>
+    </header>
+
+    <main>
+      <section class="inputs">
+        <div class="dropzone" id="draft-zone">
+          <h2>Draft</h2>
+          <label class="file-label">
+            <input
+              type="file"
+              id="draft-input"
+              accept=".docx,.pdf,.txt,.md"
+            />
+            <span>Choose or drop the draft</span>
+          </label>
+          <p class="filename" id="draft-name"></p>
+        </div>
+
+        <div class="dropzone" id="revision-zone">
+          <h2>Revision</h2>
+          <label class="file-label">
+            <input
+              type="file"
+              id="revision-input"
+              accept=".docx,.pdf,.txt,.md"
+            />
+            <span>Choose or drop the revision</span>
+          </label>
+          <p class="filename" id="revision-name"></p>
+        </div>
+      </section>
+
+      <div class="stats" id="stats" hidden></div>
+      <div class="error" id="error" hidden></div>
+      <section class="output" id="output"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

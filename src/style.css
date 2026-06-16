@@ -1,0 +1,108 @@
+/* Add/del colors carried over from the Python tool's HTML template. */
+:root {
+  --add-bg: #c8facc;
+  --del-color: #c0392b;
+  --border: #ddd;
+  --accent: #4a90d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+header {
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+
+.tagline {
+  margin: 0;
+  color: #555;
+  max-width: 60ch;
+}
+
+main {
+  padding: 24px 32px;
+}
+
+.inputs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.dropzone {
+  flex: 1;
+  min-width: 240px;
+  padding: 16px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.dropzone.drag {
+  border-color: var(--accent);
+  background: #f0f7ff;
+}
+
+.dropzone h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.file-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.filename {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: #555;
+  word-break: break-all;
+}
+
+.stats {
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background: #f5f5f5;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.error {
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  color: #a3252b;
+  border-radius: 6px;
+}
+
+.output p {
+  margin: 0 0 0.75em;
+}
+
+.add {
+  background: var(--add-bg);
+  text-decoration: none;
+}
+
+.del {
+  color: var(--del-color);
+  text-decoration: line-through;
+}
