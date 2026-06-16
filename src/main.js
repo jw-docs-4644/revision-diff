@@ -197,7 +197,7 @@ async function showStudent(student, btn) {
 function altNote(side, alternates) {
   if (!alternates || !alternates.length) return '';
   const names = alternates.map((a) => escapeHtml(a.original)).join(', ');
-  return `<p class="alt">Other ${side} file(s) not compared: ${names}</p>`;
+  return `<p class="alt">⚠ Multiple ${side} files submitted — compared the most recent. Not compared: ${names}</p>`;
 }
 
 async function readEntry(fileObj) {

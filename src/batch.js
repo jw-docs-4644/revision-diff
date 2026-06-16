@@ -36,14 +36,17 @@ export function matchSubmissions(draftEntries, revisionEntries) {
 }
 
 // When a student uploaded more than one file on a side, diff the primary one
-// (prefer a supported document type, then first alphabetically) and report
-// the rest so the instructor knows they weren't compared.
+// (prefer a supported document type, then the most recent submission) and
+// report the rest so the instructor knows they weren't compared.
+//
+// "Most recent" = highest Canvas submission id. Canvas assigns these in
+// increasing order, so the largest id is the latest-submitted file.
 const SUPPORTED = /\.(docx|pdf|txt|md)$/i;
 
 export function pickPrimary(files) {
   const supported = files.filter((f) => SUPPORTED.test(f.original));
   const pool = (supported.length ? supported : files)
     .slice()
-    .sort((a, b) => a.original.localeCompare(b.original));
+    .sort((a, b) => Number(b.subid) - Number(a.subid));
   return { chosen: pool[0], alternates: pool.slice(1) };
 }
