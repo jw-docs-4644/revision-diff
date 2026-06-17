@@ -2,3 +2,7 @@ node_modules/
 dist/
 *.local
 .DS_Store
+
+# Real student submissions used for local testing — never commit (FERPA/PII).
+# Keep these on disk for smoke tests; ship synthetic fixtures instead.
+testing/
