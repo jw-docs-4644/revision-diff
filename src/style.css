@@ -428,10 +428,19 @@ h1 {
     --del-color: #fca5a5;
     --border: #374151;
     --accent: #818cf8;
+    color-scheme: dark;
   }
 
   body {
     background: #111827;
+    color: #f3f4f6;
+  }
+
+  h1, h2, h3, h4 {
+    color: #f3f4f6;
+  }
+
+  label {
     color: #f3f4f6;
   }
 
@@ -444,13 +453,13 @@ h1 {
   }
 
   .privacy {
-    background: #1e2d3d;
-    border-color: #2d4a6a;
+    background: #1f2937;
+    border-color: #374151;
   }
 
   .privacy summary,
   .privacy p {
-    color: #93b4d0;
+    color: #93c5fd;
   }
 
   .results-head {
