@@ -50,6 +50,7 @@ This tool runs in your browser. Submission files are read and compared on your o
     </label>
     <p class="filename" id="revision-name"></p>
   </div>
+  <div class="dropzone" id="match-summary" hidden></div>
 </section>
 
 <div class="error" id="error" hidden></div>

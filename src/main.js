@@ -25,6 +25,7 @@ function init() {
   els.stats = $('stats');
   els.error = $('error');
   els.roster = $('roster-area');
+  els.matchSummary = $('match-summary');
   els.optSxs = $('opt-sxs');
   els.optHideUnchanged = $('opt-hide-unchanged');
   els.optIgnoreCase = $('opt-ignore-case');
@@ -121,6 +122,8 @@ function resetOutputs() {
   els.stats.innerHTML = '';
   els.roster.innerHTML = '';
   els.output.innerHTML = '';
+  els.matchSummary.hidden = true;
+  els.matchSummary.innerHTML = '';
   currentDiff = null;
 }
 
@@ -180,7 +183,10 @@ function renderBatch() {
       `</details>`;
   }
 
-  parts.push(`<div class="summary"><strong>${matched.length}</strong> matched${incompleteHtml}</div>`);
+  els.matchSummary.hidden = false;
+  els.matchSummary.innerHTML =
+    `<h2>Results</h2>` +
+    `<p><strong>${matched.length}</strong> matched${incompleteHtml}</p>`;
 
   // One roster of everyone, sorted by name: matched students plus those who
   // submitted only one side. Each carries a status so showStudent knows what
