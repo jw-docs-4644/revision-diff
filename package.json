@@ -17,6 +17,7 @@
     "pdfjs-dist": "^4.10.38"
   },
   "devDependencies": {
+    "marked": "^18.0.5",
     "vite": "^6.0.0"
   }
 }

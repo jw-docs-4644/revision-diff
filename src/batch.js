@@ -24,8 +24,8 @@ export function matchSubmissions(draftEntries, revisionEntries) {
     const revision = revMap.get(userid);
     const slug = (draft && draft[0].slug) || (revision && revision[0].slug) || userid;
     if (draft && revision) matched.push({ userid, slug, draft, revision });
-    else if (!draft) missingDraft.push({ userid, slug });
-    else missingRevision.push({ userid, slug });
+    else if (!draft) missingDraft.push({ userid, slug, revision });
+    else missingRevision.push({ userid, slug, draft });
   }
 
   const bySlug = (a, b) => a.slug.localeCompare(b.slug);
