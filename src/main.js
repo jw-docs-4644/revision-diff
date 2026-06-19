@@ -350,4 +350,10 @@ function showError(msg) {
   els.error.textContent = msg;
 }
 
+// Open all intro-column links in a new tab so they don't navigate the iframe.
+document.querySelectorAll('.intro-links a').forEach((a) => {
+  a.target = '_blank';
+  a.rel = 'noopener';
+});
+
 init();

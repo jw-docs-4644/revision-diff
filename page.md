@@ -23,12 +23,13 @@ This tool runs in your browser. Submission files are read and compared on your o
 </div>
 </div>
 <div class="intro-links">
-<h4>Links</h4>
-<ul>
-  <li><a href="https://github.com/jw-docs-4644/revision-diff" target="_blank" rel="noopener">GitHub repository</a></li>
-  <li><a href="https://sheetbend.app/contact" target="_blank" rel="noopener">Report an issue</a></li>
-  <li><a href="https://sheetbend.app" target="_blank" rel="noopener">Sheetbend</a></li>
-</ul>
+
+#### Links
+
+- [GitHub repository](https://github.com/jw-docs-4644/revision-diff)
+- [Report an issue](https://sheetbend.app/contact)
+- [Sheetbend](https://sheetbend.app)
+
 </div>
 </section>
 
