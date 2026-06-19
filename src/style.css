@@ -174,12 +174,12 @@ h1 {
 /* Options box: same dashed outline as the dropzones, full-width below the
    Draft/Revision row, everything on one line, box hugs the content. */
 .options {
-  margin: 0 32px 16px;
+  margin: 0 0 8px;
   display: flex;
   align-items: center;
   padding: 8px 14px;
   gap: 0;
-  flex: 0 0 auto; /* body is a column flex; override .dropzone's 280px flex-basis (which becomes a height) */
+  flex: 0 0 auto;
 }
 
 .options h2 {

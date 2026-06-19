@@ -52,17 +52,16 @@ This tool runs in your browser. Submission files are read and compared on your o
   </div>
 </section>
 
+<div class="error" id="error" hidden></div>
+
+<div class="results">
+<div class="results-head">
 <div class="dropzone options" id="options-zone">
   <h2>Options</h2>
   <label><input type="checkbox" id="opt-sxs" /> Side-by-side</label>
   <label><input type="checkbox" id="opt-hide-unchanged" /> Hide unchanged</label>
   <label><input type="checkbox" id="opt-ignore-case" /> Ignore case &amp; spacing</label>
 </div>
-
-<div class="error" id="error" hidden></div>
-
-<div class="results">
-<div class="results-head">
 <div id="roster-area"></div>
 <div class="stats" id="stats" hidden></div>
 </div>
