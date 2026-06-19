@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision Diff — compare a draft and a revision</title>
+    <script type="module" crossorigin src="./assets/index-Bb3SOcZo.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-i-gq4wIW.css">
+  </head>
+  <body>
+    <header><h1>Compare Drafts and Revisions</h1>
+</header><section class="intro">
+<div class="intro-main">
+<div class="intro-text"><p>Use this tool to quickly see what changed between a draft and its revision. Compare single files, or download submissions from two separate assignments in Canvas to compare changes for each students.</p>
+<p>Changes are shown in a basic &quot;diff&quot; format. This shows which paragraphs have been added, removed, or edited. It also shows word-by-word changes within paragraphs.</p>
+</div>
+<div class="privacy">
+<details>
+<summary><strong>Your files stay on your computer.</strong> <span class="read-more"></span></summary><p>This tool runs in your browser. Submission files are read and compared on your own machine and are uploaded to a server. This tool uses no AI, no tracking, and no analytics. The page loads its code once, then works on the file add. It will even work offline.</p>
+</details>
+</div>
+</div>
+<div class="intro-links"><h4>Links</h4>
+<ul>
+<li><a href="https://github.com/your-org/revision-diff">GitHub repository</a></li>
+<li><a href="https://sheetbend.app/contact">Report an issue</a></li>
+<li><a href="https://sheetbend.app">Sheetbend</a></li>
+</ul>
+</div>
+</section><section class="inputs">
+  <div class="dropzone" id="draft-zone">
+    <h2>Draft</h2>
+    <label class="file-label">
+      <input type="file" id="draft-input" accept=".docx,.pdf,.txt,.md,.zip" />
+      <span>Choose or drop a document or a submissions ZIP</span>
+    </label>
+    <p class="filename" id="draft-name"></p>
+  </div>
+  <div class="dropzone" id="revision-zone">
+    <h2>Revision</h2>
+    <label class="file-label">
+      <input type="file" id="revision-input" accept=".docx,.pdf,.txt,.md,.zip" />
+      <span>Choose or drop a document or a submissions ZIP</span>
+    </label>
+    <p class="filename" id="revision-name"></p>
+  </div>
+</section><div class="dropzone options" id="options-zone">
+  <h2>Options</h2>
+  <label><input type="checkbox" id="opt-sxs" /> Side-by-side</label>
+  <label><input type="checkbox" id="opt-hide-unchanged" /> Hide unchanged</label>
+  <label><input type="checkbox" id="opt-ignore-case" /> Ignore case &amp; spacing</label>
+</div><div class="error" id="error" hidden></div><div class="results">
+<div class="results-head">
+<div id="roster-area"></div>
+<div class="stats" id="stats" hidden></div>
+</div>
+<section class="output" id="output"></section>
+</div>
+
+  </body>
+</html>
