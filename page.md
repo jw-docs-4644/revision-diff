@@ -28,7 +28,7 @@ This tool runs in your browser. Submission files are read and compared on your o
 
 - [GitHub repository](https://github.com/jw-docs-4644/revision-diff)
 - [Report an issue](https://sheetbend.app/contact)
-- [Sheetbend](https://sheetbend.app)
+- [Check out Sheetbend](https://sheetbend.app)
 
 </div>
 </section>
