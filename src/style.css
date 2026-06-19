@@ -421,3 +421,143 @@ h1 {
     gap: 16px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --add-bg: #064e3b;
+    --del-color: #fca5a5;
+    --border: #374151;
+    --accent: #818cf8;
+  }
+
+  body {
+    background: #111827;
+    color: #f3f4f6;
+  }
+
+  header {
+    border-bottom-color: #374151;
+  }
+
+  .intro-text p {
+    color: #d1d5db;
+  }
+
+  .privacy {
+    background: #1e2d3d;
+    border-color: #2d4a6a;
+  }
+
+  .privacy summary,
+  .privacy p {
+    color: #93b4d0;
+  }
+
+  .results-head {
+    background: #111827;
+    border-bottom-color: #374151;
+  }
+
+  .dropzone {
+    border-color: #374151;
+  }
+
+  .dropzone.drag {
+    border-color: var(--accent);
+    background: #1e2433;
+  }
+
+  .filename {
+    color: #9ca3af;
+  }
+
+  .stats {
+    background: #1f2937;
+    border-color: #374151;
+    color: #d1d5db;
+  }
+
+  .error {
+    background: #2d1a1a;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+  }
+
+  .summary {
+    background: #1a2535;
+    border-color: #2d4a6a;
+    color: #d1d5db;
+  }
+
+  .incomplete-details > summary {
+    color: #fbbf24;
+  }
+
+  .incomplete-panel {
+    background: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .incomplete-panel p,
+  .incomplete-panel li {
+    color: #d1d5db;
+  }
+
+  .student-nav select {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+  }
+
+  .nav-btn {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+  }
+
+  .nav-btn:hover:not(:disabled) {
+    background: #374151;
+  }
+
+  .uid {
+    color: #6b7280;
+  }
+
+  .multi {
+    background: #2d2006;
+    border-color: #78350f;
+    color: #fcd34d;
+  }
+
+  .diff-head {
+    border-bottom-color: #374151;
+  }
+
+  .diff-head p {
+    color: #9ca3af;
+  }
+
+  .alt {
+    color: #fbbf24 !important;
+  }
+
+  .notice {
+    background: #1c1a07;
+    border-color: #78350f;
+    color: #fbbf24;
+  }
+
+  .sxs-old {
+    border-right-color: #374151;
+  }
+
+  .add {
+    background: var(--add-bg);
+    color: #6ee7b7;
+  }
+
+  .del {
+    color: var(--del-color);
+  }
+}
