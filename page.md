@@ -1,6 +1,6 @@
 <header>
 
-# Compare Drafts and Revisions
+# Compare Student Drafts and Revision Changes
 
 </header>
 
@@ -8,16 +8,20 @@
 <div class="intro-main">
 <div class="intro-text">
 
-Use this tool to quickly see what changed between a draft and its revision. Compare single files, or download submissions from two separate assignments in Canvas to compare changes for each students.
+Use this tool to quickly see what changed between a draft and its revision. Compare single files or download submissions from two separate assignments in Canvas to compare changes for each student.
 
 Changes are shown in a basic "diff" format. This shows which paragraphs have been added, removed, or edited. It also shows word-by-word changes within paragraphs.
+
+If you find this helpful, you may be interested in [Sheetbend.](https://sheetbend.app), which deals with another teaching problem: Organizing teaching materials quickly and efficiently. 
+
 
 </div>
 <div class="privacy">
 <details>
-<summary><strong>Your files stay on your computer.</strong> <span class="read-more"></span></summary>
+<summary>**Your files stay on your computer.** <span class="read-more"></span></summary>
 
-This tool runs in your browser. Submission files are read and compared on your own machine and are uploaded to a server. This tool uses no AI, no tracking, and no analytics. The page loads its code once, then works on the file add. It will even work offline.
+This tool runs in your browser. Submission files are read and compared on your own machine and are never uploaded to a server. This tool uses no AI, no tracking, and no analytics. The page loads its code once. It can work offline if you need it to.
+
 
 </details>
 </div>
