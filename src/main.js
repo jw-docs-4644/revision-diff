@@ -1,3 +1,7 @@
+// Revision Diff — compare a draft and a revision in the browser.
+// Copyright (C) 2026 Sheetbend, LLC
+// Licensed under the GNU AGPL-3.0. See the LICENSE file for details.
+
 import './style.css';
 import { extractText, extractTextFromFile } from './extract.js';
 import { renderDiff, renderDiffSideBySide, computeStats } from './diff.js';

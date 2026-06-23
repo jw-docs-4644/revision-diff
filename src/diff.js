@@ -1,3 +1,7 @@
+// Revision Diff — compare a draft and a revision in the browser.
+// Copyright (C) 2026 Sheetbend, LLC
+// Licensed under the GNU AGPL-3.0. See the LICENSE file for details.
+
 // Diff core, ported from compare_draft_final.py (word_diff / md_diff).
 // Like the Python tool it's a two-level diff: align paragraphs first, then
 // word-diff within the blocks that actually changed. No AI — pure text.

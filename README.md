@@ -73,6 +73,6 @@ If you find this tool helpful, you might want to try out [Sheetbend](https://she
 
 ## License
 
-[GNU AGPL-3.0](LICENSE) © 2026 Josh Welsh
+[GNU AGPL-3.0](LICENSE) © 2026 Sheetbend, LLC
 
-If you host a modified version of this tool, the AGPL requires you to make your modified source available to its users. "Sheetbend" is my own name/brand and is not licensed for reuse under the AGPL.
+If you host a modified version of this tool, the AGPL requires you to make your modified source available to its users. "Sheetbend" is a trademark of Sheetbend, LLC and is not licensed for reuse under the AGPL.

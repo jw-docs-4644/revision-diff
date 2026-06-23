@@ -1,3 +1,7 @@
+// Revision Diff — compare a draft and a revision in the browser.
+// Copyright (C) 2026 Sheetbend, LLC
+// Licensed under the GNU AGPL-3.0. See the LICENSE file for details.
+
 // Pull plain text out of a document, entirely in the browser.
 // Replaces the Python tool's pandoc subprocess + Canvas downloads.
 // Works from either a File (single-file mode) or an ArrayBuffer (ZIP mode).

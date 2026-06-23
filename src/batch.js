@@ -1,3 +1,7 @@
+// Revision Diff — compare a draft and a revision in the browser.
+// Copyright (C) 2026 Sheetbend, LLC
+// Licensed under the GNU AGPL-3.0. See the LICENSE file for details.
+
 // Line up draft and revision submissions by student, and surface anyone
 // who's missing one side.
 
