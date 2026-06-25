@@ -30,8 +30,8 @@ This tool runs in your browser. Submission files are read and compared on your o
 
 #### Links
 
-- [More information](https://sheetbend.app/blog/compare-drafts-and-revisions-using-diff)
-- [GitHub repository](https://github.com/jw-docs-4644/revision-diff)
+- [Read more about this tool](https://sheetbend.app/blog/compare-drafts-and-revisions-using-diff)
+- [Check out the GitHub repository](https://github.com/jw-docs-4644/revision-diff)
 - [Report an issue](https://sheetbend.app/contact)
 - [Check out Sheetbend](https://sheetbend.app)
 - [Follow me on Bluesky](https://bsky.app/profile/josh-welsh.bsky.social)
