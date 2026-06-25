@@ -426,6 +426,24 @@ h1 {
   }
 }
 
+.tool-cta {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.tool-cta p {
+  margin: 0 auto;
+  max-width: 48ch;
+}
+
+.tool-cta a {
+  color: var(--accent);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --add-bg: #064e3b;
@@ -572,5 +590,9 @@ h1 {
 
   .del {
     color: var(--del-color);
+  }
+
+  .tool-cta {
+    color: #9ca3af;
   }
 }

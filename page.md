@@ -34,6 +34,7 @@ This tool runs in your browser. Submission files are read and compared on your o
 - [GitHub repository](https://github.com/jw-docs-4644/revision-diff)
 - [Report an issue](https://sheetbend.app/contact)
 - [Check out Sheetbend](https://sheetbend.app)
+- [Follow me on Bluesky](https://bsky.app/profile/josh-welsh.bsky.social)
 
 </div>
 </section>
@@ -73,3 +74,9 @@ This tool runs in your browser. Submission files are read and compared on your o
 </div>
 <section class="output" id="output"></section>
 </div>
+
+<footer class="tool-cta">
+
+I build tools to make teaching a little easier. If this tool saved you some time, [follow me on Bluesky](https://bsky.app/profile/josh-welsh.bsky.social) for updates and new tools. 
+
+</footer>
