@@ -20,7 +20,7 @@ If you find this helpful, you may be interested in [Sheetbend.](https://sheetben
 <details>
 <summary>**Your files stay on your computer.** <span class="read-more"></span></summary>
 
-This tool runs in your browser. Submission files are read and compared on your own machine and are never uploaded to a server. This tool uses no AI, no tracking, and no analytics. The page loads its code once. It can work offline if you need it to. [Privacy policy](https://sheetbend.app/privacy)
+This tool runs in your browser. Submission files are read and compared on your own machine and are never uploaded to a server. This tool uses no AI, no tracking, and no analytics. The page loads its code once. It can work offline if you need it to.
 
 
 </details>
@@ -77,6 +77,6 @@ This tool runs in your browser. Submission files are read and compared on your o
 
 <footer class="tool-cta">
 
-I build tools to make teaching a little easier. If this tool saved you some time, [follow me on Bluesky](https://bsky.app/profile/josh-welsh.bsky.social) for updates and new tools. · [Privacy policy](https://sheetbend.app/privacy)
+I build tools to make teaching a little easier. If this tool saved you some time, [follow me on Bluesky](https://bsky.app/profile/josh-welsh.bsky.social) for updates and new tools. 
 
 </footer>
